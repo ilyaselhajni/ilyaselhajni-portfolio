@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+  cursor: none;
+}
+
+#root {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+/* Hide cursor on all interactive elements */
+a, button, input, textarea, select {
+  cursor: none !important;
+}
+
+/* Ensure cursor is visible on hoverable elements */
+a:hover, button:hover, input:hover, textarea:hover, select:hover {
+  cursor: none !important;
+}
+
+/* Add a subtle hover effect for interactive elements */
+a, button, input, textarea, select {
+  transition: all 0.3s ease;
+}
+
+a:hover, button:hover {
+  opacity: 0.8;
+}

@@ -1,0 +1,9 @@
+.textBlock {
+  transition: transform 0.3s cubic-bezier(.4,2,.6,1), box-shadow 0.3s, color 0.3s;
+}
+.textBlockHover {
+  transform: scale(1.08);
+  color: #a3a3ff;
+  box-shadow: 0 0 32px 8px rgba(163,163,255,0.25);
+  text-shadow: 0 0 24px #a3a3ff, 0 0 8px #fff;
+} 
