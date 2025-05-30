@@ -1,0 +1,47 @@
+/* Responsive styles for HomePage */
+@media (max-width: 900px) {
+  .homepage-main-row {
+    gap: 3vw !important;
+    padding: 0 2vw !important;
+  }
+  .homepage-col {
+    max-width: 45vw !important;
+    min-width: 160px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .homepage-main-row {
+    flex-direction: column !important;
+    gap: 2rem !important;
+    width: 100vw !important;
+    padding: 0 1vw !important;
+    justify-content: flex-start !important;
+    align-items: stretch !important;
+  }
+  .homepage-col {
+    max-width: 100vw !important;
+    min-width: 0 !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+    width: 100% !important;
+  }
+  .homepage-col:last-child {
+    align-items: flex-end !important;
+    text-align: right !important;
+  }
+  .homepage-title {
+    font-size: 2rem !important;
+    width: 100% !important;
+    text-align: left !important;
+  }
+  .homepage-arrow {
+    margin-top: 0.5rem !important;
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .homepage-contact {
+    font-size: 1.2rem !important;
+    padding: 0.7rem 1rem !important;
+  }
+} 

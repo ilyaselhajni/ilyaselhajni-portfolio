@@ -56,6 +56,7 @@ const ProjectsPage = () => {
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
           gap: '2rem',
+          marginBottom: '4rem'
         }}>
           <motion.div
             whileHover={{ scale: 1.02 }}
@@ -70,7 +71,7 @@ const ProjectsPage = () => {
             }}
           >
             <h3 style={{ fontFamily: '"Space Mono", monospace', marginBottom: '0.5rem' }}>Restaurantly</h3>
-            <p style={{ opacity: 0.8 }}>A restaurant website for a local restaurant, fully responsive and built with React and Tailwind CSS.</p>
+            <p style={{ opacity: 0.8 }}>A restaurant website for a local restaurant, fully responsive and built with HTML, JS and CSS.</p>
             <motion.a
               href="https://github.com/yourusername/restaurantly"
               target="_blank"
@@ -107,10 +108,10 @@ const ProjectsPage = () => {
               gap: '1rem',
             }}
           >
-            <h3 style={{ fontFamily: '"Space Mono", monospace', marginBottom: '0.5rem' }}>EasyFolio</h3>
-            <p style={{ opacity: 0.8 }}>a portfolio website for a freelancer, built with React and Tailwind CSS.</p>
+            <h3 style={{ fontFamily: '"Space Mono", monospace', marginBottom: '0.5rem' }}>Movies</h3>
+            <p style={{ opacity: 0.8 }}>a movies website, built with react and tailwind CSS.</p>
             <motion.a
-              href="https://github.com/yourusername/easyfolio"
+              href="https://github.com/ilyaselhajni/ilyas-elhajni-movies"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
@@ -145,10 +146,10 @@ const ProjectsPage = () => {
               gap: '1rem',
             }}
           >
-            <h3 style={{ fontFamily: '"Space Mono", monospace', marginBottom: '0.5rem' }}>Hangman game</h3>
-            <p style={{ opacity: 0.8 }}> a hangman game built with React and Tailwind CSS.</p>
+            <h3 style={{ fontFamily: '"Space Mono", monospace', marginBottom: '0.5rem' }}>LibFree</h3>
+            <p style={{ opacity: 0.8 }}> a library website, built with react and tailwind CSS.</p>
             <motion.a
-              href="https://github.com/yourusername/hangman-game"
+              href="https://github.com/ilyaselhajni/LibFree"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
@@ -171,6 +172,48 @@ const ProjectsPage = () => {
             </motion.a>
           </motion.div>
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          style={{
+            textAlign: 'center',
+            marginTop: '4rem',
+            padding: '2rem',
+            background: 'rgba(255, 255, 255, 0.05)',
+            borderRadius: '16px',
+            backdropFilter: 'blur(10px)',
+            border: '1px solid rgba(255,255,255,0.1)'
+          }}
+        >
+          <h2 style={{
+            fontFamily: '"Space Mono", monospace',
+            fontSize: '2rem',
+            marginBottom: '1rem',
+            textShadow: '0 0 10px rgba(255,255,255,0.3)'
+          }}>
+            Contact
+          </h2>
+          <motion.a
+            href="mailto:ialhajni@gmail.com"
+            whileHover={{ scale: 1.05 }}
+            style={{
+              color: '#ffffff',
+              textDecoration: 'none',
+              fontFamily: '"Space Mono", monospace',
+              fontSize: '1.2rem',
+              opacity: 0.9,
+              display: 'inline-block',
+              padding: '0.5rem 1rem',
+              background: 'rgba(255,255,255,0.1)',
+              borderRadius: '8px',
+              transition: 'all 0.3s ease'
+            }}
+          >
+            ialhajni@gmail.com
+          </motion.a>
+        </motion.div>
       </motion.div>
     </div>
   );

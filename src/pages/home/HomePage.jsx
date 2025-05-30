@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import './HomePageResponsive.css';
 
 // Animation variants for premium look
 const textBlockVariants = {
@@ -128,6 +129,7 @@ const HomePage = () => {
         }}
       >
         <div
+          className="homepage-main-row"
           style={{
             display: 'flex',
             flexDirection: 'row',
@@ -138,9 +140,10 @@ const HomePage = () => {
             padding: '0 5vw',
           }}
         >
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', maxWidth: '30vw', minWidth: '250px' }}>
+          <div className="homepage-col" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', maxWidth: '30vw', minWidth: '250px' }}>
             <Link to="/experience" style={{ textDecoration: 'none' }}>
               <motion.div
+                className="homepage-title"
                 variants={textBlockVariants}
                 initial="initial"
                 animate="animate"
@@ -164,6 +167,7 @@ const HomePage = () => {
               </motion.div>
             </Link>
             <motion.div
+              className="homepage-arrow"
               variants={arrowVariants}
               initial="initial"
               animate="animate"
@@ -203,9 +207,10 @@ const HomePage = () => {
               </svg>
             </motion.div>
           </div>
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', maxWidth: '30vw', minWidth: '250px' }}>
+          <div className="homepage-col" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', maxWidth: '30vw', minWidth: '250px' }}>
             <Link to="/projects" style={{ textDecoration: 'none' }}>
               <motion.div
+                className="homepage-title"
                 variants={textBlockVariants}
                 initial="initial"
                 animate="animate"
@@ -229,6 +234,7 @@ const HomePage = () => {
               </motion.div>
             </Link>
             <motion.div
+              className="homepage-arrow"
               variants={arrowVariants}
               initial="initial"
               animate="animate"
@@ -271,6 +277,53 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+
+      {/* Contact Heading */}
+      <motion.div
+        className="homepage-contact"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.6 }}
+        style={{
+          position: 'absolute',
+          bottom: '2rem',
+          left: 0,
+          right: 0,
+          zIndex: 20,
+          pointerEvents: 'auto',
+          textAlign: 'center',
+        }}
+      >
+        <Link to="/contact" style={{ textDecoration: 'none' }}>
+          <motion.h1
+            whileHover={{ 
+              scale: 1.1,
+              y: -5,
+              letterSpacing: '0.15em',
+            }}
+            transition={{
+              type: "spring",
+              stiffness: 400,
+              damping: 17,
+              mass: 0.8
+            }}
+            style={{
+              fontFamily: '"Space Mono", monospace',
+              color: '#ffffff',
+              fontSize: '2rem',
+              letterSpacing: '0.1em',
+              textTransform: 'uppercase',
+              textShadow: '0 0 10px rgba(255,255,255,0.6)',
+              cursor: 'pointer',
+              display: 'inline-block',
+              margin: 0,
+              padding: 0,
+            }}
+          >
+            Contact
+          </motion.h1>
+        </Link>
+      </motion.div>
     </div>
   );
 };
