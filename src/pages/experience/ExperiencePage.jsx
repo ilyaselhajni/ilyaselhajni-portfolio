@@ -11,21 +11,9 @@ const technologies = [
   { icon: FaHtml5, name: "HTML", color: "#E44D26" },
   { icon: FaCss3, name: "CSS", color: "#264DE4" },
   { icon: FaJs, name: "JavaScript", color: "#F7DF1E" },
-  { icon: RiReactjsLine, name: "React", color: "#61DAFB" },
+  { icon: RiReactjsLine, name: "React",  color: "#61DAFB" },
   { icon: SiTailwindcss, name: "Tailwind", color: "#06B6D4" },
   { icon: SiVite, name: "Vite", color: "#646CFF" },
-  
-
-  { icon: SiNodedotjs, name: "Node.js", color: "#339933" },
-
-  { icon: FaPython, name: "Python", color: "#3776AB" },
-  
-
-
-  
-
-  { icon: SiGit, name: "Git", color: "#F05032" },
-
 ];
 
 const TechnologyCarousel = () => {
@@ -56,7 +44,6 @@ const TechnologyCarousel = () => {
           left: 0,
         }}
       >
-        {/* First set of icons */}
         {technologies.map((tech, index) => {
           const Icon = tech.icon;
           return (
@@ -107,7 +94,6 @@ const TechnologyCarousel = () => {
             </motion.div>
           );
         })}
-        {/* Duplicate set for seamless loop */}
         {technologies.map((tech, index) => {
           const Icon = tech.icon;
           return (
@@ -225,7 +211,7 @@ const ExperiencePage = () => {
               flexDirection: 'column',
               gap: '2rem',
             }}>
-              {/* Full Stack Development */}
+              {/* Frontend Development */}
               <motion.div
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -244,14 +230,14 @@ const ExperiencePage = () => {
                   marginBottom: '1rem',
                   textShadow: '0 0 10px rgba(255,255,255,0.3)'
                 }}>
-                  Full Stack Development
+                  Frontend Development
                 </h2>
                 <p style={{ 
                   opacity: 0.8, 
                   marginBottom: '1.5rem',
                   textShadow: '0 0 5px rgba(255,255,255,0.2)'
                 }}>
-                  End-to-end web application development with a focus on user experience and performance.
+                  Building responsive and interactive user interfaces with modern web technologies.
                 </p>
                 <TechnologyCarousel />
               </motion.div>

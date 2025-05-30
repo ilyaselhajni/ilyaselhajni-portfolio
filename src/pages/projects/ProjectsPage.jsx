@@ -73,7 +73,7 @@ const ProjectsPage = () => {
             <h3 style={{ fontFamily: '"Space Mono", monospace', marginBottom: '0.5rem' }}>Restaurantly</h3>
             <p style={{ opacity: 0.8 }}>A restaurant website for a local restaurant, fully responsive and built with HTML, JS and CSS.</p>
             <motion.a
-              href="https://github.com/yourusername/restaurantly"
+              href="https://github.com/ilyaselhajni/ilyas_elhajni_finalproject_dom"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
